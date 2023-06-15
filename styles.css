@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+*{
+  margin:0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  margin: 0 Auto;
+  width: 100%;  
+  max-width: 400px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #222;
+}
+
+.pokedex {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #f8f8f8;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.top-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #FF0000;
+  border: 10px solid black;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.pokeball {
+  width: 90px;
+  height: 90px;
+  background-size: 100%;
+  background-image: url('/img/pokebola.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.pokedex-title {
+  margin-left: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.middle-section {
+  padding: 20px;
+  border: 10px solid black;
+}
+
+.pokemon-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.pokemon-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-left: 5%;
+}
+
+.pokemon-number {
+  font-size: 50px;
+  font-weight: 700;
+  color: #0b0b0bd2;
+  width: 100%;
+  
+}
+
+.pokemon-image {
+  text-align: center;
+  
+}
+
+#pokemonImage {
+  width: 200px;
+  height: 200px;
+}
+
+#pokemonName {
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-top: -10px;
+  
+  
+}
+
+.pokemon-details {
+  width: 100%;  
+}
+
+.pokemon-stats {
+  margin-bottom: 10px;
+}
+
+.label {
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+.pokemon-abilities,
+.pokemon-weaknesses,
+.pokemon-strengths,
+.pokemon-evolutions,
+.pokemon-location {
+  margin-bottom: 10px;
+}
+
+.pokemon-abilities .label,
+.pokemon-weaknesses .label,
+.pokemon-strengths .label,
+.pokemon-evolutions .label,
+.pokemon-location .label {
+  margin-right: 5px;
+  font-weight: 700;
+}
+
+.pokemon-abilities span,
+.pokemon-weaknesses span,
+.pokemon-strengths span,
+.pokemon-evolutions span,
+.pokemon-location span {
+  font-weight: 400;
+}
+
+.pokemon-evolutions ul {
+  padding-left: 20px;
+  list-style-type: none;
+}
+
+.bottom-section {
+  padding: 20px;
+  background-color: #FF0000;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 10px solid black;
+}
+
+.controls button {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #ffcc00;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.controls button:hover {
+  background-color: #ffa500;
+}
+
+.search input {
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 5px 0 0 5px;
+  border: none;
+  width: 70%;
+}
+
+.search button {
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 0 5px 5px 0;
+  border: none;
+  background-color: #ffcc00;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search button:hover {
+  background-color: #ffa500;
+}

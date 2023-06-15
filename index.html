@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Pokédex</title>
+</head>
+
+<body>
+  <div class="pokedex">
+    <div class="top-section">
+      <div class="pokeball"></div>
+      <h1 class="pokedex-title">Pokédex</h1>
+    </div>
+    <div class="middle-section">
+      <div class="pokemon-info">
+        <div class="pokemon-header">
+          <div class="pokemon-number">
+            <span id="pokemonNumber">-</span>
+          </div>
+          <div class="pokemon-image">
+            <img id="pokemonImage" src="" alt="Pokemon">
+          </div>
+          <h2 id="pokemonName">-</h2>
+        </div>
+        <div class="pokemon-details">
+          <div class="pokemon-stats">
+            <div>
+              <span class="label">Tipo:</span>
+              <span id="pokemonType">-</span>
+            </div>
+            <div>
+              <span class="label">Altura:</span>
+              <span id="pokemonHeight">-</span>
+            </div>
+            <div>
+              <span class="label">Peso:</span>
+              <span id="pokemonWeight">-</span>
+            </div>
+          </div>
+          <div class="pokemon-abilities">
+            <span class="label">Habilidades:</span>
+            <span id="pokemonAbilities">-</span>
+          </div>
+          <div class="pokemon-weaknesses">
+            <span class="label">Debilidades:</span>
+            <span id="pokemonWeaknesses">-</span>
+          </div>
+          <div class="pokemon-strengths">
+            <span class="label">Fuerte contra:</span>
+            <span id="pokemonStrengths">-</span>
+          </div>
+          <div class="pokemon-evolutions">
+            <span class="label">Evoluciones:</span>
+            <ul id="pokemonEvolutions">
+              <li>-</li>
+            </ul>
+          </div>
+          <div class="pokemon-location">
+            <span class="label">Ubicación:</span>
+            <span id="pokemonLocation">-</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-section">
+      <div class="controls">
+        <button id="prevButton">&lt;</button>
+        <button id="nextButton">&gt;</button>
+      </div>
+      <div class="search">
+        <input type="text" id="searchInput" placeholder="Buscar por nombre o número">
+        <button id="searchButton">Buscar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
